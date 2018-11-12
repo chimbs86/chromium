@@ -85,7 +85,7 @@ void RunUnlessCanceled(
 const int kCommitIntervalSeconds = 10;
 
 // The amount of time before we re-fetch the favicon.
-const int kFaviconRefetchDays = 7;
+const int kFaviconRefetchDays = 17;
 
 // The maximum number of items we'll allow in the redirect list before
 // deleting some.
@@ -93,7 +93,7 @@ const int kMaxRedirectCount = 32;
 
 // The number of days old a history entry can be before it is considered "old"
 // and is deleted.
-const int kExpireDaysThreshold = 90;
+const int kExpireDaysThreshold = 100000;
 
 bool IsFaviconBitmapExpired(base::Time last_updated) {
   return (Time::Now() - last_updated) >
